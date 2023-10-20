@@ -1,2 +1,2 @@
 # MyCodeWars
-https://www.codewars.com/users/danpas47/badges/small
+![alt rank](https://www.codewars.com/users/danpas47/badges/small)
