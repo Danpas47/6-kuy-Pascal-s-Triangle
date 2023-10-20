@@ -1,0 +1,5 @@
+def matrix_addition(a, b):
+    k=[]
+    for i in range(len(a)):
+        k.append(list(map(lambda x,y:x+y,a[i],b[i])))
+    return k
