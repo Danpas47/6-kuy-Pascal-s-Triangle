@@ -1,0 +1,8 @@
+def spin_words(sentence):
+    a=''
+    for i in sentence.split():
+        if len(i)>=5:    
+            a+=i[::-1]+' '
+        else:
+            a+=i+' '
+    return a.rstrip()
