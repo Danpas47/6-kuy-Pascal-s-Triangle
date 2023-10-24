@@ -1,0 +1,11 @@
+def count(s):
+    unique=[]
+    dict = {}
+    if s == '':
+        return {}
+    else:
+        for i in range(len(s)):
+            if s[i] not in unique:
+                unique.append(s[i])
+                dict[s[i]]=s.count(s[i])
+    return dict
