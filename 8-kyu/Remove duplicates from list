@@ -1,0 +1,4 @@
+def distinct(seq):
+    res = []
+    [res.append(x) for x in seq if x not in res]
+    return res
