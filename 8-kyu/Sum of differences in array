@@ -1,0 +1,4 @@
+def sum_of_differences(arr):
+    if len(arr)>1:
+        return max(arr)-min(arr)
+    return 0
