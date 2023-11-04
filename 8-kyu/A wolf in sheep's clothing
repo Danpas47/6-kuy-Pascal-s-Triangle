@@ -1,0 +1,4 @@
+def warn_the_sheep(q):
+    if q.index('wolf')!=len(q)-1:
+        return f"Oi! Sheep number {len(q)-(q.index('wolf')+1)}! You are about to be eaten by a wolf!"
+    return "Pls go away and stop eating my sheep"
