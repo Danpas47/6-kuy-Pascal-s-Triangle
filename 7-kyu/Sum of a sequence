@@ -1,0 +1,2 @@
+def sequence_sum(bn, en, s):
+    return sum(range(bn,en+1,s))
