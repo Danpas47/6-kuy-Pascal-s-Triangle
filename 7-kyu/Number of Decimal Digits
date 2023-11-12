@@ -1,0 +1,2 @@
+def digits(n):
+    return len(list(map(int,str(n))))
