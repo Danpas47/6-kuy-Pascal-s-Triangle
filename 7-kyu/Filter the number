@@ -1,0 +1,7 @@
+def filter_string(string):
+    result=''
+    numbers='0123456789'
+    for i in string:
+        if i in numbers:
+            result+=i
+    return int(result)
