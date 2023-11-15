@@ -1,0 +1,6 @@
+import math
+def circle_area(r):
+    if r>0:
+        return round(math.pi*r**2,3) 
+    else:
+        raise ValueError('err')
