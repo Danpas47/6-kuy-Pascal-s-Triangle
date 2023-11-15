@@ -1,0 +1,8 @@
+def div_con(x):
+    result=0
+    for i in x:
+        if isinstance(i,int):
+            result+=i
+        else:
+            result-=int(i)
+    return result
