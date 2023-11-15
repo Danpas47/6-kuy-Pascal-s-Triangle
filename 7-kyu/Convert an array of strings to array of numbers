@@ -1,0 +1,8 @@
+def to_float_array(arr): 
+    out = []
+    for i in arr:
+        if '.' in i:
+            out.append(float(i))
+        else:
+            out.append(int(i))
+    return out
