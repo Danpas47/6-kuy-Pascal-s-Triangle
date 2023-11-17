@@ -1,0 +1,2 @@
+def disarium_number(number):
+    return "Disarium !!" if sum([p**(v+1) for v,p in enumerate(list(map(int,str(number))))])==number else "Not !!" 
