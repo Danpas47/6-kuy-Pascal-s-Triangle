@@ -1,0 +1,5 @@
+def highest_rank(arr):
+    arr_res=[]
+    for i in sorted(arr)[::-1]:
+        arr_res.append(arr.count(i))
+    return sorted(arr)[::-1][arr_res.index(max(arr_res))]
