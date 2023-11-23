@@ -1,0 +1,3 @@
+def is_divisible(n,*a):
+    k = [n%k for k in a]
+    return True if sum(k)==0 else False
