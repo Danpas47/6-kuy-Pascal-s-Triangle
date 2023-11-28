@@ -1,0 +1,2 @@
+def solution(n, d):
+    return [] if d <= 0 else [int(i) for i in str(n)[-d:]]
