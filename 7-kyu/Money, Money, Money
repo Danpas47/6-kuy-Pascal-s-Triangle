@@ -1,0 +1,10 @@
+import math
+def calculate_years(principal, interest, tax, desired):
+    result = principal
+    counter=0
+    while result<desired:
+        tax_rate = result*interest*tax
+        money = result*interest
+        result += (money-tax_rate)
+        counter+=1
+    return counter
