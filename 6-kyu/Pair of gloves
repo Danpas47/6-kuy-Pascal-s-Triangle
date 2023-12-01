@@ -1,0 +1,6 @@
+def number_of_pairs(gloves):
+    result=0
+    for i in set(gloves):
+        counter=(gloves.count(i))//2
+        result+=counter
+    return result
