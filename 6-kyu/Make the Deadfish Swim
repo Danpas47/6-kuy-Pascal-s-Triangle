@@ -1,0 +1,15 @@
+def parse(data):
+    j=0
+    result=[]
+    for i in data:
+        if i == 'i':
+            j+=1
+        elif i == 'd':
+            j-=1
+        elif i=='s':
+            j=j**2
+        elif i=='o':
+            result.append(j)
+        else:
+            continue
+    return result
