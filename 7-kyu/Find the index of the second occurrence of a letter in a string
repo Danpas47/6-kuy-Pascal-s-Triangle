@@ -1,0 +1,5 @@
+def second_symbol(s, symbol):
+    try:
+        return s.index(symbol,s.index(symbol)+1)
+    except:
+        return -1
