@@ -1,0 +1,2 @@
+def check_three_and_two(array):
+    return {array.count(letter) for letter in array} == {2, 3}
