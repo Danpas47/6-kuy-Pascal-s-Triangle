@@ -1,0 +1,4 @@
+def min_min_max(arr):
+    for i in range(min(arr),max(arr)):
+        if i not in arr:
+            return [min(arr),i,max(arr)]
