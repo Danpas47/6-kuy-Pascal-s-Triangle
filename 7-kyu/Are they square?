@@ -1,0 +1,7 @@
+def is_square(arr):
+    if arr:
+        for i in arr:
+            if i**0.5>int(i**0.5):
+                return False
+        return True
+    return None
