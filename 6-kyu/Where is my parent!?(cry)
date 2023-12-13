@@ -1,0 +1,9 @@
+def find_children(dancing_brigade):
+    result=''
+    Big=sorted([i for i in dancing_brigade if i.isupper()==True])
+    Small=sorted([j for j in dancing_brigade if j.islower()==True])
+    for k in Big:
+        result+=k
+        if k.lower() in Small:
+            result+=Small.count(k.lower())*k.lower()
+    return result
