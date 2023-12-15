@@ -1,0 +1,6 @@
+def battle(x, y):
+    if sum([ord(i)-64 for i in x])>sum([ord(j)-64 for j in y]):
+        return x
+    elif sum([ord(i)-64 for i in x])<sum([ord(j)-64 for j in y]):
+        return y
+    return 'Tie!'
