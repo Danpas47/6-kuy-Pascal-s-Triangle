@@ -1,0 +1,9 @@
+#Write a function that receives an array of words, and returns the total number of distinct pairs of anagramic words inside it.
+def anagram_counter(words):
+    counter = 0
+    
+    for i in range(len(words)):
+        for j in range(i + 1, len(words)):
+            if sorted(words[i]) == sorted(words[j]):
+                counter += 1
+    return counter
