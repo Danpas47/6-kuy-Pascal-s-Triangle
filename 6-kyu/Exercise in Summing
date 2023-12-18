@@ -1,0 +1,10 @@
+#Your task is to finish two functions, minimumSum and maximumSum, that take 2 parameters:
+
+#values: an array of integers with an arbitrary length; may be positive and negative
+#n: how many integers should be summed; always 0 or bigger
+
+def minimum_sum(values, n):
+    return sum(sorted(values)[:n])
+
+def maximum_sum(values, n):
+    return sum(sorted(values)[-1:-n-1:-1])
