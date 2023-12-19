@@ -1,0 +1,10 @@
+#Check that the two provided arrays both contain the same number of different unique items, regardless of order.
+
+def balance(arr1, arr2):
+    c_o=[]
+    c_t=[]
+    for i in set(arr1):
+        c_o.append(arr1.count(i))
+    for j in set(arr2):
+        c_t.append(arr2.count(j))
+    return sorted(c_o)==sorted(c_t)
