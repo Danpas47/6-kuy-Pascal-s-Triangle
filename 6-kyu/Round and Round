@@ -1,0 +1,9 @@
+#Since there are lots of katas requiring you to round numbers to 2 decimal places. 
+#You decided to extract the method to ease out the process and you can't even get this right!
+
+
+from decimal import *
+
+def round_by_2_decimal_places(n):
+    return n.quantize(Decimal('1.00'),ROUND_HALF_UP)
+
