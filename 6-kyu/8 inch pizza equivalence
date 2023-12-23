@@ -1,0 +1,7 @@
+#How many 8-inch pizzas "fit" in a 16-incher?
+#For sizes that don't correspond to a round number of 8-inchers, you must round the number of slices (one 8-inch pizza = 8 slices)
+
+
+def how_many_pizzas(n):
+    pizza_numb=((n/2)**2)//16
+    return f'pizzas: {int(pizza_numb)}, slices: {int((((n/2)**2)-16*pizza_numb)//2)}'
