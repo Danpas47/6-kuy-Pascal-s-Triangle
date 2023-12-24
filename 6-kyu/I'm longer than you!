@@ -1,0 +1,4 @@
+#Create a function longer that accepts a string and sorts the words in it based on their respective lengths in an ascending order.
+
+def longer(s):
+    return ' '.join(sorted(sorted(s.split()),key=len))
