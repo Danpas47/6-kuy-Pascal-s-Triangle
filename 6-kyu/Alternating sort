@@ -1,0 +1,27 @@
+#Write a function alternate_sort(l)
+#that combines the elements of an array by sorting the elements ascending by their absolute value 
+#and outputs negative and non-negative integers alternatingly (starting with the negative value, if any).
+
+
+def alternate_sort(l):
+    negative=sorted([abs(n) for n in l if n<0])
+    positive=sorted([p for p in l if p>=0])
+    neg_len = len(negative)
+    pos_len = len(positive)
+    result=[]
+    if negative ==[]:
+        return positive
+    elif positive == []:
+        for k in range(neg_len):
+            result.append(negative[k]*(-1))
+        return result
+    else:
+        for k in range(max(pos_len,neg_len)):
+            if k>=pos_len:
+                result.append(negative[k]*(-1))
+            elif k>=neg_len:
+                result.append(positive[k])
+            else:
+                result.append(negative[k]*(-1))
+                result.append(positive[k])
+        return result
