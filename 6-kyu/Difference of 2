@@ -1,0 +1,13 @@
+#The objective is to return all pairs of integers from a given array of integers that have a difference of 2.
+
+
+
+def twos_difference(lst): 
+    result =[]
+    pair = []
+    for i in lst:
+        for j in lst:
+            if abs(i-j)==2 and sorted([i,j]) not in pair:
+                pair.append(sorted([i,j]))
+                result.append((min(i,j),max(i,j)))
+    return sorted(result)
