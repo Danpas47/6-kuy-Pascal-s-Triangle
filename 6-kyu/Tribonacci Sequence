@@ -1,0 +1,10 @@
+#As the name may already reveal, it works basically like a Fibonacci, 
+#but summing the last 3 (instead of 2) numbers of the sequence to generate the next.
+
+def tribonacci(signature, n):
+    if len(signature)<n:
+        for i in range(0,n-len(signature)):
+            signature.append(sum(signature[i:i+3]))
+        return signature
+    else:
+        return signature[:n]
