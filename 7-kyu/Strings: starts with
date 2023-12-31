@@ -1,0 +1,6 @@
+#Challenge: Given two null-terminated strings in the arguments "string" and "prefix", 
+#determine if "string" starts with the "prefix" string. Return true or false.\
+
+
+def starts_with(st, prefix): 
+    return st.startswith(prefix)
