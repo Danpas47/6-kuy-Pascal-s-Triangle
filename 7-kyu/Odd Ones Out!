@@ -1,0 +1,5 @@
+#You are given a list of numbers. The numbers each repeat a certain number of times.
+#Remove all numbers that repeat an odd number of times while keeping everything else the same.
+
+def odd_ones_out(numbers):
+    return [i for i in numbers if numbers.count(i) % 2 == 0]
