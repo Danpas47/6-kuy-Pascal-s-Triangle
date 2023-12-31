@@ -1,0 +1,4 @@
+#Given a number N, determine if the sum of N consecutive numbers is odd or even.
+
+def odd_or_even(n):
+    return "Either" if n % 2 else "Odd" if n % 4 else "Even"
