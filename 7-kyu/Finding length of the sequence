@@ -1,0 +1,7 @@
+def length_of_sequence(arr,n):
+    if arr.count(n)!=2:
+        return 0
+    else:
+        for i in range(arr.index(n)+1,len(arr)):
+            if arr[i] == n:
+                return (i-arr.index(n))+1
