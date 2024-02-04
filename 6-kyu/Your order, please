@@ -1,0 +1,16 @@
+'''
+Your task is to sort a given string. Each word in the string will contain a single number.
+This number is the position the word should have in the result.
+'''
+
+def order(sentence):
+    result = []
+    numbs = '123456789'
+    answer = dict()
+    for i in sentence.split():
+        for j in i:
+            if j in numbs:
+                answer[int(j)] = i
+    for key in sorted(answer.keys()):
+        result.append(answer[key])
+    return ' '.join(result)
